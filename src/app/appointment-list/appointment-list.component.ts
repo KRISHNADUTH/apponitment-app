@@ -17,7 +17,6 @@ export class ApponitmentListComponent implements OnInit {
   ngOnInit(): void {
     let savedAppointments = localStorage.getItem("appointments");
     this.appointments = savedAppointments ? JSON.parse(savedAppointments) : [];
-    
   }
 
   addAppointment(): void {
